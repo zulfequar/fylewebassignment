@@ -1,0 +1,342 @@
+/*
+    Author: Zulfequar Ali
+    E-mail: ali.zulfequar92@gmail.com
+    Phone: +91 9643 080818 (Jan 2019)
+ */
+
+ /* 
+    This CSS is perfectly compatible with browsers: Chrome, Safari, Firefox, Opera, IE and many others.
+    This webpage is quite responsive for all sizes of viewports (Galaxy S5, Pixel2, iPhone 6/7/8, iPad etc.)
+    
+    Note: Older versions of some browsers may not support some properties like Flexbox, Grid etc.
+          So, please use latest versions of browsers.
+
+    Properties are selectively prefixed with their vendor prefixes in order to still support some older versions of some browsers.
+	
+	No UI framework and no CSS pre or post processor has been used while developing it.
+ */
+ 
+/*
+========================================================================
+============================ Viewport Widths ===========================
+========================================================================
+*/
+
+/* Viewport Widths CSS */
+
+
+/* ============== max-width: 950px =============== */
+
+@media(max-width: 950px) {
+    #top-section article {
+        margin-bottom: 10%;
+    }
+
+    #top-section h1 {
+        font-size: 3.5rem;
+        line-height: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    #top-section p {
+        font-size: .9rem;
+        line-height: 1.2rem;
+    }
+    
+    
+    #food-showcase {
+        height: 20%;
+        /* height: 8rem; */
+    }
+
+    #food-showcase a {
+        width: 7.5rem;
+    }
+
+    #item1 {
+        -ms-flex-preferred-size: 12rem;
+            flex-basis: 12rem;
+    }
+
+
+    #food-items-menu {
+            -ms-flex-preferred-size: 18rem;
+                flex-basis: 18rem;
+    }
+    
+    #caption {
+        margin-top: -1rem;
+    }
+
+    #caption h1 {
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
+}
+
+
+/* ============== max-width: 825px =============== */
+
+@media(max-width: 825px) {
+    #food-items-menu {
+        -ms-flex-preferred-size: 15rem;
+            flex-basis: 15rem;
+    }
+
+    #caption {
+        margin-top: -.6rem;
+    }
+
+    #caption h1 {
+        font-size: 1.8rem;
+        line-height: 1.6rem;
+    }
+}
+
+
+/* ============== max-width: 700px =============== */
+
+@media(max-width: 700px) {
+    .wrapper {
+        padding-left: 10%;
+    }
+
+    #main-nav {
+        right: 10%;
+    }
+
+    #top-section article {
+        margin-bottom: 15%;
+    }
+
+    #top-section h1 {
+        font-size: 3rem;
+        line-height: 2.6rem;
+        padding-bottom: .7rem;
+    }
+
+    #top-section p {
+        font-size: .8rem;
+        line-height: 1rem;
+        word-spacing: 3px;
+    }
+
+
+    #food-showcase {
+        height: 18%;
+        /* height: 7rem; */
+    }
+
+    #food-showcase a {
+        width: 6.5rem;
+    }
+    
+    #item1 {
+        -ms-flex-preferred-size: 10rem;
+            flex-basis: 10rem;
+    }
+    
+    
+    #showcase-bottom {
+        width: 90%;
+    }
+        
+    #caption {
+        margin-left: .2rem;
+    }
+    
+    #caption h1 {
+        font-size: 1.5rem;
+    }
+    
+
+    #btm-sect-container {
+        width: 80%;
+        height: 12rem;
+    }
+    
+    :root {
+        --media-icon-size: 3.5rem;
+        --media-icon-hover-size: 4.5rem;
+    }
+}
+
+
+/* ============== max-width: 450px =============== */
+
+@media(max-width: 450px) {
+    .wrapper {
+        padding-left: 25%;
+    }
+
+    #main-nav {
+        -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        width: 6rem;
+        height: 20rem;
+        left: 0;
+    }
+
+    #main-nav a {
+        height: 4.5rem;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #user {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+
+    #aeroplane {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+    }
+
+    #fish {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+    }
+
+    #mug {
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4;
+    }
+    
+    #top-section article {
+        margin-bottom: 35%;
+    }
+    
+    #top-section h1 {
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
+
+    #top-section p {
+        font-size: .7rem;
+        line-height: .75rem;
+        word-spacing: 1px;
+    }
+
+
+    #food-showcase {
+        top: 5rem;
+        height: 7rem;
+    }
+
+    #food-showcase a {
+        width: 5.3rem;
+        margin-right: .5rem;
+    }
+    
+    #item1 {
+        -ms-flex-preferred-size: 8rem;
+            flex-basis: 8rem;
+    }
+
+    #showcase-bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 60%;
+        height: 40%;
+        bottom: 15%;
+    }
+
+    #food-items-menu {
+        height: 5rem;
+    }
+       
+    #caption {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    
+    #caption h1 {
+        font-size: 1.8rem;
+        line-height: 1.6rem;
+    }
+    
+
+    #btm-sect-container {
+        margin-left: -5%;
+        width: 78%;
+        height: 10rem;
+    }
+	
+	
+    :root {
+        --media-icon-size: 3rem;
+        --media-icon-hover-size: 4rem;
+    }
+}
+
+
+/* ============== max-width: 375px =============== */
+
+@media(max-width: 375px) {
+
+    #top-section article {
+        margin-bottom: 40%;
+    }
+
+    #top-section h1 {
+        font-size: 2rem;
+        line-height: 1.7rem;
+        padding-bottom: .4rem;
+    }
+
+    #top-section p {
+        font-size: .65rem;
+        line-height: .65rem;
+        word-spacing: .1px;
+    }
+
+    #food-showcase {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: 14rem;
+        top: 1rem;
+    }
+
+    #food-showcase a {
+        -ms-flex-preferred-size: 4rem;
+            flex-basis: 4rem;
+        width: 9rem;
+        height: 4rem;
+        margin: .3rem 1.5rem;
+    }
+
+    #item1 {
+        -ms-flex-preferred-size: 4rem;
+            flex-basis: 4rem;
+    }
+    
+
+    #caption h1 {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+    
+    
+    #btm-sect-container {
+        height: 8rem;
+    }
+	
+    
+    :root {
+        --media-icon-size: 2.5rem;
+        --media-icon-hover-size: 3rem;
+    }
+}

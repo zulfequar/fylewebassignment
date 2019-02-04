@@ -1,0 +1,126 @@
+/*
+    Author: Zulfequar Ali
+    E-mail: ali.zulfequar92@gmail.com
+    Phone: +91 9643 080818 (Jan 2019)
+ */
+
+ /* 
+    This CSS is perfectly compatible with browsers: Chrome, Safari, Firefox, Opera, IE and many others.
+    This webpage is quite responsive for all sizes of viewports (Galaxy S5, Pixel2, iPhone 6/7/8, iPad etc.)
+    
+    Note: Older versions of some browsers may not support some properties like Flexbox, Grid etc.
+          So, please use latest versions of browsers.
+
+    Properties are selectively prefixed with their vendor prefixes in order to still support some older versions of some browsers.
+	
+	No UI framework and no CSS pre or post processor has been used while developing it.
+ */
+ 
+/*
+========================================================================
+========================== Viewport Heights ============================
+========================================================================
+*/
+
+/* Viewport Heights CSS */
+
+/* ============== max-height: 500px =============== */
+
+@media(max-height: 500px) {
+    #top-section h1 {
+        font-size: 3rem;
+        line-height: 2.6rem;
+        padding-bottom: .7rem;
+    }
+
+    #top-section p {
+        font-size: .8rem;
+        line-height: 1rem;
+        word-spacing: 3px;
+    }
+
+
+    #food-showcase {
+        top: 5.7rem;
+    }
+    #food-showcase a {
+        width: 8rem;
+    }
+    
+    #item1 {
+            -ms-flex-preferred-size: 11rem;
+                flex-basis: 11rem;
+    }
+
+
+    #food-items-menu {
+        -ms-flex-preferred-size: 14rem;
+            flex-basis: 14rem;
+    }
+
+    #caption {
+        margin-top: -1.8rem;
+    }
+
+    #caption h1 {
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
+
+    
+    #btm-sect-container {
+        height: 12rem;
+    }
+    
+    :root {
+        --media-icon-size: 3.5rem;
+        --media-icon-hover-size: 4rem;
+    }
+}
+
+
+/* ============== max-height: 375px =============== */
+
+@media(max-height: 375px) {
+    #main-nav a {
+        width: 100%;
+        height: 200%;
+    }
+
+    #top-section h1 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+        padding-bottom: .5rem;
+    }
+
+    #top-section p {
+        font-size: .6rem;
+        line-height: .8rem;
+        word-spacing: 1px;
+    }
+    
+    
+    #showcase-bottom {
+        bottom: 5%;
+    }
+
+    #caption {
+        margin-top: -1rem;
+    }
+
+    #caption h1 {
+        font-size: 1.8rem;
+        line-height: 1.6rem;
+    }
+
+
+    #btm-sect-container {
+        height: 10rem;
+    }
+
+    
+    footer {
+        padding: 1rem;
+        height: 10rem;
+    }
+}

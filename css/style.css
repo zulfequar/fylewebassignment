@@ -1,0 +1,395 @@
+/*
+    Author: Zulfequar Ali
+    E-mail: ali.zulfequar92@gmail.com
+    Phone: +91 9643 080818 (Jan 2019)
+ */
+
+ /* 
+    This CSS is perfectly compatible with browsers: Chrome, Safari, Firefox, Opera, IE and many others.
+    This webpage is quite responsive for all sizes of viewports (Galaxy S5, Pixel2, iPhone 6/7/8, iPad etc.)
+    
+    Note: Older versions of some browsers may not support some properties like Flexbox, Grid etc.
+          So, please use latest versions of browsers.
+
+    Properties are selectively prefixed with their vendor prefixes in order to still support some older versions of some browsers.
+	
+	No UI framework and no CSS pre or post processor has been used while developing it.
+ */
+
+
+ /* Common CSS */
+
+:root {
+    --primary-color: #fff;
+    --media-icon-size: 4.3rem;
+    --media-icon-hover-size: 5.5rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.wrapper {
+    padding-left: 15%;
+    margin: auto;
+}
+
+
+/*
+========================================================================
+======================== Navigation ====================================
+========================================================================
+*/
+
+/* Navigation bar CSS */
+
+#main-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+
+    width: 23rem;
+    height: 5rem;
+    position: fixed;
+    right: 18%;
+    top: 0;
+    z-index: 3;
+}
+
+#main-nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+}
+
+#main-nav img {
+    width: 2.5rem;
+    height:2.5rem;
+}
+
+#user img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px var(--primary-color) solid;
+    border-radius: 50%;
+}
+
+#main-nav p {
+    font-size: .6rem;
+    color: var(--primary-color);
+}
+
+/*
+========================================================================
+=========================== Top Section ================================
+========================================================================
+*/
+
+/* Top Section CSS */
+
+#top-section {
+    background-image: url('../img/photos/travels-year-book2.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+
+#top-section article {
+    margin-bottom: 6%;
+}
+
+#top-section a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#top-section h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    padding-bottom: 1.5rem;
+
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#top-section p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    word-spacing: 5px;
+    text-align: left;
+}
+
+/*
+========================================================================
+========================== Foodies Section =============================
+========================================================================
+*/
+
+/* Foodies Section (mid-section) CSS */
+
+#foodies-section {
+    background-image: url('../img/photos/fish-fried.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+
+/* =============== overlay ================== */
+
+#overlay {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* =============== Food-Showcase ================== */
+
+#food-showcase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    /* heights and widths specified in % unit will help in handling more bigger screens */ 
+    height: 27%;
+    position: absolute;
+    top: 7rem;
+    z-index: 2;
+    /* overflow: scroll; */
+}
+
+#food-showcase a {
+    width: 13%;
+    /* width: 9rem; */
+    margin-right: 1rem;
+}
+
+#item1 {
+        -ms-flex-preferred-size: 22%;
+            flex-basis: 22%;
+        /* flex-basis: 16rem; */
+}
+
+#food-showcase img {
+    width: 100%;
+    height: 100%;
+}
+
+#food-showcase a:hover {
+    border: 5px magenta solid;
+}
+
+
+
+/* =============== Showcase-Bottom ================== */
+
+#showcase-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30%;
+    width: 85%;
+    position: absolute;
+    bottom: 10%;
+    z-index: 2;
+}
+
+#food-items-menu {
+    -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+    /* flex-basis: 18rem; */
+    height: 100%;
+
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 15% 1fr 15% 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 48%;
+    grid-gap: .5rem;
+}
+
+#food-items-menu img {
+    width: 100%;
+    height: 100%;
+}
+
+#food-items-menu a:hover {
+    border: 2px var(--primary-color) solid;
+    background: #343;
+    border-radius: 50%;
+}
+
+#food-items-menu a :active {
+    background: #273;
+    border-radius: 50%;
+}
+
+#caption {
+    margin-left: 2rem;    
+    margin-top: -2.5rem;
+    padding-right: 5px;
+}
+
+#caption h1 {
+    font-size: 3rem;
+    line-height: 2.9rem;
+    font-weight: 900;
+    color: #093;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*
+========================================================================
+========================== Bottom Section ==============================
+========================================================================
+*/
+
+/* Bottom Section CSS */
+
+#bottom-section {
+    background-image: url('../img/photos/walk1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+#btm-sect-container {
+    position: absolute;
+    bottom: 15%;
+    width: 70%;
+    height: 15rem;
+
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50%;
+    justify-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+}
+
+#bottom-row-1 {
+    width: 100%;
+    height: 100%;
+}
+
+#bottom-row-2 {
+    width: 100%;
+    height: var(--media-icon-size);
+
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100%;
+    justify-items: center;
+}
+
+#bottom-row-2 a {
+    width: var(--media-icon-size);
+    height: var(--media-icon-size);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+#bottom-row-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+#bottom-row-2 a:hover {
+    width: var(--media-icon-hover-size);
+    height: var(--media-icon-hover-size);
+}
+
+/*
+========================================================================
+============================= Footer ===================================
+========================================================================
+*/
+
+/* Footer CSS */
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem 0;
+    background: #a23;
+    height: 15rem;
+}
+
+
+footer p {
+    color: var(--primary-color);
+    font-size: .75rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer small {
+    color: #d43;
+    font-size: .8rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #d43;
+    font-size: .8rem;;
+}
